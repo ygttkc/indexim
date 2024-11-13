@@ -1,34 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>s.sql was here</title>
     <style>
-        body {
-            background-color: black;
-            color: yellow;
-            text-align: center;
-            font-family: Arial, sans-serif;
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
         }
 
-        h1 {
-            margin-top: 20px;
+        .fullscreen-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
         }
 
-        img {
-            margin: 20px auto;
-            display: block;
+        /* Bilgisayar için görüntü */
+        @media (min-width: 768px) {
+            .fullscreen-image {
+                background-image: url('https://i.hizliresim.com/1gka2ch.png');
+            }
         }
 
-        p {
-            color: white;
-            font-size: 14px;
+        /* Mobil için görüntü */
+        @media (max-width: 767px) {
+            .fullscreen-image {
+                background-image: url('https://i.hizliresim.com/8sh3l7m.png');
+            }
         }
     </style>
 </head>
 <body>
-    <center><h1 style="color: white;">s.sql was here.</h1></center>
-    <center><img src="https://i.hizliresim.com/5xdmfpj.gif" alt="flag"></center>
+    <div class="fullscreen-image"></div>
 </body>
+<script>
+alert("sitenizi korumayı öğrenin amk")
+</script>
 </html>
